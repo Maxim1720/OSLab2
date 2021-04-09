@@ -27,18 +27,22 @@ namespace WinAPI_Process_Lab
                 (data.p.VirtualMemorySize64 / (1024*1024)).ToString("0.0") + "/" + (data.RAM_Size / (1024)).ToString("0.0");
         }
 
+        
 
+        private void Read_AltoButton_Click(object sender, EventArgs e)
+        {
+            data.ReadingValue = new StringBuilder(TextToReadingVar_altoTextBox1.Text);
+            ReadingVar_metroLabel1.Text = data.ReadingValue.ToString();
 
-
-
+        }
     }
     public class Data
     {
         public Process p;
         public long RAM_Size;
 
-        StringBuilder ReadingValue;
-        StringBuilder WritingValue;
+        public StringBuilder ReadingValue;
+        public StringBuilder WritingValue;
 
     }
 
