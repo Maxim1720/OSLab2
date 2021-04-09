@@ -178,6 +178,8 @@ namespace WinAPI_Process_Lab
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.VirtualMemorySize_SlidingLabel);
             this.Controls.Add(this.altoSlidingLabel1);
+            this.MaximumSize = new System.Drawing.Size(554, 410);
+            this.MinimumSize = new System.Drawing.Size(554, 410);
             this.Name = "Form1";
             this.Style = MetroFramework.MetroColorStyle.Silver;
             this.Text = "Write and Read";
